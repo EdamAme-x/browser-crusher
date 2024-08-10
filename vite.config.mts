@@ -168,7 +168,7 @@ function injectAntiWapaplyzer(html: string) {
         `<script src="backbone.fake.js" type="gateway"></script>`,
         `<meta name="author" content="Convertr Commerce" />`,
         `<link href="//redshop.s3.amazonaws.com/" rel="gateway" />`,
-        `<div id="svelte-announcer" />`
+        `<div id="svelte-announcer"></div>`,
     ];
     const replacedHead = html.replace(/<\/head>/, (head) => fakeHead.join("\n") + head);
     return replacedHead;
